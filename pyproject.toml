@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling, bs4, requests"]
+build-backend = "hatchling.build"
+
+[project]
+name = "polish-anime-downloader"
+version = "0.0.1"
+authors = [
+  { name="K0RR", email="me@k0rr.xyz" },
+]
+description = "ATM retarded, barely functional video link extractor from polish anime sites"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Unlicense",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RDKRACZ/polish-anime-downloader"
+"Bug Tracker" = "https://github.com/RDKRACZ/polish-anime-downloader/issues"
