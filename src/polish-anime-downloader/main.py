@@ -1,12 +1,12 @@
-import requests, re, signal, sys
+import requests, re, signal, sys, time, timeit, logging
 from urllib.parse import urlsplit, urlunsplit
 from bs4 import BeautifulSoup
-
+# TODO użyj time timeit logging
 url = "https://desu-online.pl/kono-subarashii-sekai-ni-bakuen-wo-odcinek-9/"
 url = "https://docchi.pl/series/oshi-no-ko/8"
 url = "https://docchi.pl/series/11eyes/9"
 url = "https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/"
-#url = "https://anime-odcinki.pl/anime/s2-opm/15/"
+# url = "https://anime-odcinki.pl/anime/s2-opm/15/"
 episode_1_links = None  # wcześniej było []
 prev_links = ""
 headers = {
@@ -14,9 +14,10 @@ headers = {
 }
 
 
-def handle_interrupt(signum, frame):  # MIGHTDO Maybe wrapping the code inside try: except block would be better since rn I'm importing two modules just to exit gracefully
-    print("\nSprzątam...")
-    sys.exit(0)
+def handle_interrupt(
+    signum, frame
+):  # MIGHTDO Maybe wrapping the code inside try: except block would be better since rn I'm importing two modules just to exit gracefully
+    exit("\r  Sprzątam...")
 
 
 def got_links():
@@ -25,7 +26,7 @@ def got_links():
     print(links[0])
     episode_number = int(episode_number) + 1
     prev_links = links
-    
+
 
 def get_page_title(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -33,7 +34,9 @@ def get_page_title(html):
     return title
 
 
-signal.signal(signal.SIGINT, handle_interrupt)  # Register the signal handler for SIGINT (Ctrl+C)
+signal.signal(
+    signal.SIGINT, handle_interrupt
+)  # Register the signal handler for SIGINT (Ctrl+C)
 if "desu-online" in url:
     domain = "desu-online"
 elif "animeni" in url:
@@ -42,11 +45,15 @@ elif "animeni" in url:
 elif "docchi" in url:
     domain = "docchi"
 elif "anime-odcinki" or "shinden" or "ogladajanime" or "animezone" in url:
-    domain = "anime-odcinki, ogladajanime, shinden i animezone nie są obecnie obsługiwane"
+    domain = (
+        "anime-odcinki, ogladajanime, shinden i animezone nie są obecnie obsługiwane"
+    )
     print(domain)  # TODO usunąć do dodaniu wsparcia
     exit()
 else:
-    print("Błąd: Nieobsługiwana domena. Zgłoś to tutaj: https://github.com/RDKRACZ/polish-anime-downloader/issues/new")
+    print(
+        "Błąd: Nieobsługiwana domena. Zgłoś to tutaj: https://github.com/RDKRACZ/polish-anime-downloader/issues/new"
+    )
     exit()
 
 if url.endswith("/"):  # Usuń "/" na końcu URL, jeśli istnieje
@@ -57,8 +64,10 @@ if domain == "desu-online" or "animeni":
 
     if url[-2] == "/" or url[-2] == "-":
         episode_number = int(url[-1])  # Sprawdź, czy przedostatni znak to "/", "-",
-    elif url[-2].isdigit():            # lub cyfra
-        episode_number = url[-2:]  # musi być str, bo "leading zeros in decimal integer literals are not permitted" - na wypadek jakby nr odcinka był "01", a nie "1" itd...
+    elif url[-2].isdigit():  # lub cyfra
+        episode_number = url[
+            -2:
+        ]  # musi być str, bo "leading zeros in decimal integer literals are not permitted" - na wypadek jakby nr odcinka był "01", a nie "1" itd...
     else:
         print("Błąd: Nie można odnaleźć numeru odcinka w URL.")
         exit()
@@ -89,7 +98,9 @@ while True:
         contents = file.read()
 
     pattern = r'(https?://[^/]*?(?:ebd\.cda\.pl|cda\.pl/video|drive\.google\.com/file|mega\.nz/embed|mega\.nz/file)[^"\s]*)'
-    links = re.findall(pattern, contents)  # Wyszukaj linki w zawartości pobranej na dysk strony
+    links = re.findall(
+        pattern, contents
+    )  # Wyszukaj linki w zawartości pobranej na dysk strony
 
     if episode_number == 1:
         episode_1_links = links
@@ -111,4 +122,3 @@ while True:
         break
     else:
         got_links()
- 
