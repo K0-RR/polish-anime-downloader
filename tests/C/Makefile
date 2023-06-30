@@ -1,0 +1,10 @@
+CC = gcc
+CFLAGS = -Wall -I/usr/include/python3.10
+TARGET = polish_anime_downloader
+
+$(TARGET): polish_anime_downloader.c
+	$(CC) $(CFLAGS) -o $(TARGET) polish_anime_downloader.c
+
+clean:
+	rm -f $(TARGET)
+
