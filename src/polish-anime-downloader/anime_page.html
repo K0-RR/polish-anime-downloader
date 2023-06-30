@@ -1,0 +1,1265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" lang="pl-PL" prefix="og: https://ogp.me/ns#">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<meta name="theme-color" content="#0c70de">
+<meta name="msapplication-navbutton-color" content="#0c70de">
+<meta name="apple-mobile-web-app-status-bar-style" content="#0c70de">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script>
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Isekai Shoukan wa Nidome desu Odcinek 09 - AnimeNi.pl</title>
+<meta name="description" content="Grupa: Fava Subs Tłumaczenie: Pochita Korekta: StarDust Typesetting: GrendVerd Quality Check: Reisha"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/" />
+<meta property="og:locale" content="pl_PL" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Isekai Shoukan wa Nidome desu Odcinek 09 - AnimeNi.pl" />
+<meta property="og:description" content="Grupa: Fava Subs Tłumaczenie: Pochita Korekta: StarDust Typesetting: GrendVerd Quality Check: Reisha" />
+<meta property="og:url" content="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/" />
+<meta property="og:site_name" content="AnimeNi.pl" />
+<meta property="article:section" content="Isekai Shoukan wa Nidome desu" />
+<meta property="og:image" content="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/1f88f5458ebb918fe1d66534e366c532.jpg" />
+<meta property="og:image:secure_url" content="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/1f88f5458ebb918fe1d66534e366c532.jpg" />
+<meta property="og:image:width" content="1920" />
+<meta property="og:image:height" content="1080" />
+<meta property="og:image:alt" content="Isekai Shoukan wa Nidome desu Odcinek 09" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Isekai Shoukan wa Nidome desu Odcinek 09 - AnimeNi.pl" />
+<meta name="twitter:description" content="Grupa: Fava Subs Tłumaczenie: Pochita Korekta: StarDust Typesetting: GrendVerd Quality Check: Reisha" />
+<meta name="twitter:image" content="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/1f88f5458ebb918fe1d66534e366c532.jpg" />
+<meta name="twitter:label1" content="Napisane przez" />
+<meta name="twitter:data1" content="moszter" />
+<meta name="twitter:label2" content="Czas czytania" />
+<meta name="twitter:data2" content="Mniej niż minuta" />
+<!-- /Wtyczka Rank Math WordPress SEO -->
+
+<link rel="alternate" type="application/rss+xml" title="AnimeNi.pl &raquo; Isekai Shoukan wa Nidome desu Odcinek 09 Kanał z komentarzami" href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/feed/" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/animeni.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<style id='age-gate-custom-inline-css' type='text/css'>
+:root{--ag-background-image-position: center center;--ag-background-image-opacity: 100;--ag-form-background: rgba(255,255,255,1);--ag-text-color: #000000;--ag-blur: 5px;}
+</style>
+<link rel='stylesheet' id='age-gate-css' href='https://animeni.pl/wp-content/plugins/age-gate/dist/main.css?ver=3.2.0' type='text/css' media='all' />
+<style id='age-gate-options-inline-css' type='text/css'>
+:root{--ag-background-image-position: center center;--ag-background-image-opacity: 100;--ag-form-background: rgba(255,255,255,1);--ag-text-color: #000000;--ag-blur: 5px;}
+.age-gate-wrapper ~ *,.age-gate__wrapper ~ * {filter: blur(var(--ag-blur));}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://animeni.pl/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.7' type='text/css' media='all' />
+<link rel='stylesheet' id='fsb-image-css' href='https://animeni.pl/wp-content/plugins/simple-full-screen-background-image/includes/fullscreen-image.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='bodhi-svgs-attachment-css' href='https://animeni.pl/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css' href='https://animeni.pl/wp-includes/css/dashicons.min.css?ver=6.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css' href='https://animeni.pl/wp-content/themes/animestream/style.css?ver=2.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='darkstyle-css' href='https://animeni.pl/wp-content/themes/animestream/assets/css/darkmode.css?ver=2.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://animeni.pl/wp-content/themes/animestream/assets/css/font-awesome.min.css?ver=5.13.0' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-carousel-css' href='https://animeni.pl/wp-content/themes/animestream/assets/css/owl.carousel.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='qtip-css' href='https://animeni.pl/wp-content/themes/animestream/assets/css/jquery.qtip.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='tmmp-css' href='https://animeni.pl/wp-content/plugins/team-members-pro/inc/css/tmm_style.css?ver=6.2.2' type='text/css' media='all' />
+<script>
+var ajaxurl = 'https://animeni.pl/wp-admin/admin-ajax.php';
+var max_bookmark = 50;
+</script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/jquery.min.js?ver=3.5.1' id='jquery-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+const themesia_lang = {"admin_add_episode_category_error":"Cannot auto select post category","admin_add_episode_series_error":"Cannot auto select Series"};
+const tsCastDefaultImg = 'https://animeni.pl/wp-content/themes/animestream/assets/img/character-default.png';
+</script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/owl.carousel.min.js?ver=2.3.4' id='owl-carousel-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/tsmedia.js?ver=2.2.6' id='tsmedia-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/tsfn.js?ver=2.2.6' id='ts-functions-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/popular_widget.js?ver=2.2.6' id='popular_widget-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/bookmark.js?ver=6.2.2' id='bookmarks_script-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/plugins/team-members-pro/inc/js/tmm.min.js?ver=6.2.2' id='tmmp-js'></script>
+<link rel="https://api.w.org/" href="https://animeni.pl/wp-json/" /><link rel="alternate" type="application/json" href="https://animeni.pl/wp-json/wp/v2/posts/1198" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://animeni.pl/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://animeni.pl/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.2" />
+<link rel='shortlink' href='https://animeni.pl/?p=1198' />
+<link rel="alternate" type="application/json+oembed" href="https://animeni.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanimeni.pl%2Fisekai-shoukan-wa-nidome-desu-odcinek-09%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://animeni.pl/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fanimeni.pl%2Fisekai-shoukan-wa-nidome-desu-odcinek-09%2F&#038;format=xml" />
+		<script type="text/javascript">
+				var sf_templates = "<a href=\"{search_url_escaped}\">View All Results<\/a>";
+				var sf_position = '0';
+				var sf_input = '.search-live';
+				jQuery(document).ready(function(){
+					jQuery(sf_input).ajaxyLiveSearch({"expand":false,"searchUrl":"https:\/\/animeni.pl\/?s=%s","text":"Szukaj...","delay":500,"iwidth":180,"width":350,"ajaxUrl":"https:\/\/animeni.pl\/wp-admin\/admin-ajax.php","rtl":0});
+					jQuery(".live-search_ajaxy-selective-input").keyup(function() {
+						var width = jQuery(this).val().length * 8;
+						if(width < 50) {
+							width = 50;
+						}
+						jQuery(this).width(width);
+					});
+					jQuery(".live-search_ajaxy-selective-search").click(function() {
+						jQuery(this).find(".live-search_ajaxy-selective-input").focus();
+					});
+					jQuery(".live-search_ajaxy-selective-close").click(function() {
+						jQuery(this).parent().remove();
+					});
+				});
+		</script>
+		<script>
+	$(document).ready(function(){
+		$(".shme").click(function(){
+			$(".mm").toggleClass("shwx");
+		});
+		$(".expand").click(function(){
+			$(".megavid").toggleClass("xp");
+			$(".pd-expand").toggleClass("sxp");
+		});
+		$('.expand').click(function() {
+			if ($('.expand').hasClass('slamdown')){
+				$('.expand').removeClass('slamdown');
+				jQuery(".mvelement").prependTo(jQuery(".megavid"));
+			} else {
+				$('.expand').addClass('slamdown');
+				jQuery(".mvelement").appendTo(jQuery(".pd-expand"));
+			  }
+		});
+		$(".gnr").click(function(){
+			$(".gnrx").toggleClass("shwgx");
+		});
+		$(".light").click(function(){
+			$(".lowvid").toggleClass("highvid");
+		});
+		$(".colap").click(function(){
+			$(".mindes").toggleClass("alldes");
+		});
+		$(".topmobile").click(function(){
+			$(".topmobcon").toggleClass("topmobshow");
+		});
+		$(".toggler").click(function(){
+			$(".inmenu").toggleClass("inmshow");
+		});
+		$(".twoscmob").click(function(){
+			$(".searchdesk").toggleClass("searchmobi");
+		});
+		$(".srcmob").click(function(){
+			$(".minmb").toggleClass("minmbx");
+		});
+	});
+	</script>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+	  $('.tip').each(function(){
+
+		var $this = $(this);
+		var id = $this.attr('rel');
+
+		$this.qtip({
+		  content:{
+			text: '<center><img src="https://animeni.pl/wp-content/themes/animestream/assets/img/loading.gif" width="30"/></center>',
+			ajax:{
+			  url: 'https://animeni.pl/wp-admin/admin-ajax.php',
+			  type: 'POST', 
+			  loading: false,
+			  data: 'id=' + id + '&action=tooltip_action'
+			}
+		  },
+		  show: {
+			  event: 'mouseover',
+			  delay: 500,
+		  },
+		  hide: {
+			delay: 200,
+			fixed: true
+		  },
+		  position: {
+		target: 'mouse',
+		adjust: { mouse: false },
+			viewport: $(window)
+		  }
+		});
+	  });
+	});
+	</script>
+		<script>
+	var defaultTheme = "darkmode";
+	var tsmjsload = true;
+	</script>
+				<script type='text/javascript'>
+	//<![CDATA[
+	$(document).ready(function(){
+	   $("#shadow").css("height", $(document).height()).hide();
+	   $(".light").click(function(){
+		  $("#shadow").toggle();
+			 if ($("#shadow").is(":hidden"))
+				$(this).html("<i class='far fa-lightbulb' aria-hidden='true'></i> <span>Wyłącz światło</span>").removeClass("turnedOff");
+			 else
+				$(this).html("<i class='fas fa-lightbulb' aria-hidden='true'></i> <span>Zgaś światło</span>").addClass("turnedOff");
+			 });
+
+	  });
+	//]]>
+	</script>
+<link rel="icon" href="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/cropped-ikonka-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/cropped-ikonka-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/cropped-ikonka-180x180.png" />
+<meta name="msapplication-TileImage" content="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/cropped-ikonka-270x270.png" />
+</head>
+<body class="darkmode" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<script data-cfasync="false" data-no-defer="1" data-no-minify="1" data-no-optimize="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+<script>
+			if (localStorage.getItem("thememode") == null){
+				if (defaultTheme == "lightmode"){
+					jQuery("body").addClass("lightmode");
+					jQuery("body").removeClass("darkmode");
+				}else{
+					jQuery("body").addClass("darkmode");
+					jQuery("body").removeClass("lightmode");
+				}
+			}else if (localStorage.getItem("thememode") == "lightmode"){
+				jQuery("body").addClass("lightmode");
+				jQuery("body").removeClass("darkmode");
+			}else{
+				jQuery("body").addClass("darkmode");
+				jQuery("body").removeClass("lightmode");
+			}
+	</script>
+<div id='shadow'></div>
+
+<div class="th">
+	<div class="centernav bound">
+	
+	<div class="shme"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	
+	<header class="mainheader" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+		<div class="site-branding logox">
+					<span class="logos">
+				<a title="AnimeNi.pl - Twój ulubiony portal z Anime!" itemprop="url" href="https://animeni.pl/"><img itemprop="image" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="AnimeNi.pl - Twój ulubiony portal z Anime!" data-src-img="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png" data-src-webp="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png.webp" data-eio="j" class="ewww_webp"><noscript><img itemprop="image" src="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png" alt="AnimeNi.pl - Twój ulubiony portal z Anime!"></noscript><span class="hdl">AnimeNi.pl - Twój ulubiony portal z Anime!</span></a>
+			</span>
+						<span class="mobilelogo">
+				<a href="https://animeni.pl/"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src-img="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png" data-src-webp="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png" /></noscript></a>
+			</span>
+			<meta itemprop="name" content="AnimeNi.pl" />
+		</div>
+	</header>
+		
+	<div class="searchx topcon minmb">
+ 		<form action="https://animeni.pl/" id="form" method="get" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+			<meta itemprop="target" content="https://animeni.pl/?s={query}"/>
+  			<input id="s" itemprop="query-input" class="search-live" type="text" placeholder="Szukaj..." name="s"/>
+			<button type="submit" id="submitsearch"><i class="fas fa-search" aria-hidden="true"></i></button>
+			<div class="srcmob srccls"><i class="fas fa-times-circle"></i></div>
+ 		</form>
+	</div>
+	<div class="srcmob"><i class="fas fa-search" aria-hidden="true"></i></div>	
+	<div id="thememode">
+		<label class="switch">
+			<input type="checkbox">
+			<span class="slider round"></span>
+		</label>
+	</div>
+	<script>
+			if (localStorage.getItem("thememode") == null){
+				if (defaultTheme == "lightmode"){
+					jQuery(".logos img").attr('src', 'https://animeni.pl/wp-content/uploads/2023/06/logo-strona-light-lato.png');
+					jQuery("#thememode input[type='checkbox']").prop('checked', false);
+				}else{
+					jQuery(".logos img").attr('src', 'https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png');
+					jQuery("#thememode input[type='checkbox']").prop('checked', true);
+				}
+			}else if (localStorage.getItem("thememode") == "lightmode"){
+				jQuery(".logos img").attr('src', 'https://animeni.pl/wp-content/uploads/2023/06/logo-strona-light-lato.png');
+				jQuery("#thememode input[type='checkbox']").prop('checked', false);
+			}else{
+				jQuery(".logos img").attr('src', 'https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png');
+				jQuery("#thememode input[type='checkbox']").prop('checked', true);
+			}
+	</script>
+	<span class="topmobile"><i class="fa fa-th-large" aria-hidden="true"></i></span><div id="top-menu" class="topmobcon"><div class="menu-gorne-container"><ul id="menu-gorne" class="menu"><li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="https://animeni.pl/gatunki/" itemprop="url">Gatunki</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="https://animeni.pl/sezony/" itemprop="url">Sezony</a></li>
+<li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53"><a href="http://discord.gg/animeni" itemprop="url">Discord</a></li>
+<li id="menu-item-51" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"><a href="https://www.facebook.com/WithLoveToAnime" itemprop="url">Facebook</a></li>
+<li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52"><a href="https://twitter.com/animeni_pl" itemprop="url">Twitter</a></li>
+</ul></div></div>	</div>
+</div>
+
+<nav id="main-menu" class="mm">
+	<div class="centernav">
+		<div class="bound">
+			<span itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+				<ul id="menu-glowne" class="menu"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="/" itemprop="url"><span itemprop="name"><i class="fas fa-home"></i> Strona Główna</span></a></li>
+<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="https://animeni.pl/o-animeni/" itemprop="url"><span itemprop="name"><i class="fas fa-info-circle"></i> O AnimeNi</span></a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="/anime" itemprop="url"><span itemprop="name"><i class="fas fa-list"></i> Lista Anime</span></a></li>
+<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="https://animeni.pl/partnerzy/" itemprop="url"><span itemprop="name"><i class="fas fa-hands-helping"></i> Partnerzy</span></a></li>
+<li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47"><a href="https://animeni.pl/wesprzyj-nas/" itemprop="url"><span itemprop="name"><i class="fa fa-money-bill-wave"></i> Wesprzyj nas!</span></a></li>
+<li id="menu-item-45" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-45"><a href="https://animeni.pl/kontakt/" itemprop="url"><span itemprop="name"><i class="fas fa-id-card"></i> Kontakt</span></a></li>
+</ul>			</span>
+							<a href="https://animeni.pl/random" class="surprise"><i class="far fa-star" aria-hidden="true"></i> Zaskocz Mnie!</a>
+						<div class="clear"></div>
+		</div>
+	</div>
+</nav>
+
+<div id="content">
+	<div class="wrapper">
+		<div class="announ"><center><b><p style="font-size: 22px">Na bieżąco dodajemy serie po odnowieniu strony, w razie braku pożądanego anime zapraszamy na <a href="http://discord.gg/animeni">Discord!</a></p></b></center></div><div class="pd-expand"></div>
+<div class="postbody">
+<article id="post-1198" class="post-1198 hentry" itemscope="itemscope" itemtype="http://schema.org/Episode">
+		<div class="ts-breadcrumb bixbox">
+		<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+			<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				<a itemprop="item" href="https://animeni.pl/"><span itemprop="name">Strona Główna</span></a>
+				<meta itemprop="position" content="1">
+			</li>
+			 › 
+						<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				 <a itemprop="item" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/"><span itemprop="name">Isekai Shoukan wa Nidome desu</span></a>
+				<meta itemprop="position" content="2">
+			</li>
+			 › 
+			<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+				 <a itemprop="item" href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/"><span itemprop="name">Isekai Shoukan wa Nidome desu Odcinek 09</span></a>
+				<meta itemprop="position" content="3">
+			</li>
+					</ol>
+	</div>	
+	<div class="megavid">
+<div class="mvelement">
+<div class="item meta">
+					<div class="tb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+					<img width="1600" height="2276" src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" />					<meta itemprop="url" content="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg">
+					<meta itemprop="width" content="190">
+					<meta itemprop="height" content="260">
+					</div>
+					<div class="lm">
+						<div class="title-section">
+							<h1 class="entry-title" itemprop="name">Isekai Shoukan wa Nidome desu Odcinek 09</h1>
+						</div>
+						<meta itemprop="episodeNumber" content="9">
+						<span class="epx"> TV <span class="lg">Sub</span></span>
+						
+					<span class="year">
+														Dodano <span class="updated">17 czerwca, 2023</span> · 
+							<span id="ts-ep-view">? views</span> · 							Dodał <span class="vcard author"><b class="fn"><a href="https://animeni.pl/author/moszter/">moszter</a></b></span> · Serie <a href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/">Isekai Shoukan wa Nidome desu</a>
+						</span>
+					</div>
+								<div class="sosmed">
+					<a href="https://www.facebook.com/sharer.php?u=https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/"><span class="fab fa-facebook-f" aria-hidden="true"></span></a>
+					<a href="https://twitter.com/share?url=https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/"><span class="fab fa-twitter" aria-hidden="true"></span></a>
+					<a href="whatsapp://send?text=Isekai Shoukan wa Nidome desu Odcinek 09 https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/"><span class="fab fa-whatsapp" aria-hidden="true"></span></a>
+				</div>
+				</div>
+				<div class="kln"><a href="http://discord.gg/animeni"><img src="https://i.imgur.com/pD93Uca.png" title="Discord AnimeNi" /></a></div><br/>				<div class="video-content">
+					
+						<div id="embed_holder" class="lowvid"><div class="player-embed" id="pembed"><iframe src="https://ebd.cda.pl/900x552/147312039d" width="620" height="1080" style="border:none" frameBorder="0" scrolling="no" allowfullscreen name="v2"></iframe></div></div>
+				</div>
+				<div class="item video-nav">
+					<div class="mobius">
+						<select class="mirror" name="mirror" onchange="loadMi(this);">
+		<option value="">Wybierz Źródło</option>
+				<option value="PGlmcmFtZSBzcmM9Imh0dHBzOi8vZWJkLmNkYS5wbC85MDB4NTUyLzE0NzMxMjAzOWQiIHdpZHRoPSI2MjAiIGhlaWdodD0iMTA4MCIgc3R5bGU9ImJvcmRlcjpub25lIiBmcmFtZUJvcmRlcj0iMCIgc2Nyb2xsaW5nPSJubyIgYWxsb3dmdWxsc2NyZWVuIG5hbWU9InYyIj48L2lmcmFtZT4=" data-index="1">
+			CDA - Lektor		</option>
+    		<option value="PGlmcmFtZSBzcmM9Imh0dHBzOi8vZWJkLmNkYS5wbC85MDB4NTUyLzE0NzI0Mjc4MTciIHdpZHRoPSI2MjAiIGhlaWdodD0iMTA4MCIgc3R5bGU9ImJvcmRlcjpub25lIiBmcmFtZUJvcmRlcj0iMCIgc2Nyb2xsaW5nPSJubyIgYWxsb3dmdWxsc2NyZWVuIG5hbWU9InYyIj48L2lmcmFtZT4=" data-index="2">
+			CDA - Napisy		</option>
+        </select>
+						<div class="iconx">
+						<div class="icol expand"><i class="fa fa-expand" aria-hidden="true"></i> <span>Powiększ</span></div>
+						<div class="icol light"><i class="far fa-lightbulb"></i> <span>Wyłącz światło</span></div>
+											</div>
+					</div>
+				</div>
+
+<div class="naveps bignav">
+						<div class="nvs"><a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-08/" rel="prev"><i class="fas fa-angle-left"></i> <span class="tex"> Poprzedni</span></a></div>
+	<div class="nvs nvsc"><a href='https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/'><i class="fas fa-th-list"></i> <span class="tex">Wszystkie Odcinki</span></a></div>
+						<div class="nvs"><a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-10/" rel="next"><span class="tex">Następny</span> <i class="fas fa-angle-right"></i></a></div>
+</div>
+	
+<div class="kln"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8314371293254356"
+     crossorigin="anonymous"></script>
+<!-- AnimeNi -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8314371293254356"
+     data-ad-slot="8218206995"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><br/>	
+	</div>
+</div>
+	<div id="mobilepisode"></div>
+	<div class="entry-content">
+	<div class="bixbox infx">
+		<p>Pobieraj, oglądaj <b>Isekai Shoukan wa Nidome desu Odcinek 09</b> na <b>AnimeNi.pl</b> </p>
+	</div>
+			<div class="bixbox mctn">
+			<p style="text-align: center;">Grupa: <strong>Fava Subs</strong><br />
+Tłumaczenie: <strong>Pochita</strong><br />
+Korekta: <strong>StarDust</strong><br />
+Typesetting: <strong>GrendVerd</strong><br />
+Quality Check: <strong>Reisha</strong></p>
+		</div>
+		
+		</div>
+	<div class="single-info bixbox">
+	<div class="thumb">
+		<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg?resize=247,350" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu" width="247" height="350"/>	</div>
+	<div class="infox">
+				<div class="infolimit">
+					<h2 itemprop="partOfSeries">Isekai Shoukan wa Nidome desu</h2>
+					<span class="alter">Summoned to Another World for a Second Time, Isenido, 異世界召喚は二度目です</span>				</div>
+								<div class="rating">
+										<strong>Ocena 6.07</strong>
+					<div class="rating-prc">
+						<div class="rtp">
+							<div class="rtb"><span style="width:60.7%"></span></div>
+						</div>
+					</div>
+									</div>
+								<div class="info-content">
+				<div class="spe">
+					<span><b>Status:</b> Emitowany</span>										<span><b>Studio:</b> <a href="https://animeni.pl/studio/studio-elle/" rel="tag">Studio Elle</a></span>					<span class="split"><b>Rok Wydania:</b> 2023</span>					<span><b>Czas Trwania:</b> 23 min. odc.</span>					<span><b>Sezon:</b> <a href="https://animeni.pl/season/spring-2023/" rel="tag">Spring 2023</a></span>										<span><b>Typ:</b> TV</span>					<span><b>Odcinków:</b> 12</span>															<span class="split"><b>Dyrektor:</b> <a href="https://animeni.pl/director/nakanishi-motoki/" rel="tag">Nakanishi Motoki</a></span>					<span class="split"><b>Casts:</b> <a href="https://animeni.pl/cast/amano-satomi/" rel="tag">Amano Satomi</a>, <a href="https://animeni.pl/cast/fairouz-ai/" rel="tag">Fairouz Ai</a>, <a href="https://animeni.pl/cast/kozakai-yurie/" rel="tag">Kozakai Yurie</a>, <a href="https://animeni.pl/cast/maeda-kaori/" rel="tag">Maeda Kaori</a>, <a href="https://animeni.pl/cast/miki-shinichiro/" rel="tag">Miki Shinichiro</a>, <a href="https://animeni.pl/cast/nagatsuka-takuma/" rel="tag">Nagatsuka Takuma</a>, <a href="https://animeni.pl/cast/oonishi-saori/" rel="tag">Oonishi Saori</a>, <a href="https://animeni.pl/cast/satou-satomi/" rel="tag">Satou Satomi</a>, <a href="https://animeni.pl/cast/toki-shunichi/" rel="tag">Toki Shunichi</a>, <a href="https://animeni.pl/cast/yuuki-aoi/" rel="tag">Yuuki Aoi</a></span>				</div>
+				<div class="genxed"><a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a> <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a> <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a> <a href="https://animeni.pl/genres/harem/" rel="tag">Harem</a> <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a> <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a></div>									<div class="desc mindes">
+						Był sobie kiedyś człowiek, który został wezwany do innego świata i go ocalił. Po zdobyciu zbyt dużej sławy bohater zostaje poddany magii przeniesienia i odesłany, rodząc się ponownie jako dziecko w czasach współczesnych.
+
+16 lat później, Suzaki Setsu, wciąż szuka sposobu na powrót do innego świata. Bardzo nieoczekiwany rozwój wypadków sprawia, że ponownie trafia do innego świata… tym razem wraz z przyjaciółmi z klasy.
+
+[<a href="http://animeholik.pl/">animeholik.pl</a>]						<span class="colap"></span>
+					</div>
+								</div>
+			</div>
+</div>
+	<div class="bixbox"><div class="releases"><h3>Powiązane odcinki</h3></div><div class="listupd">			<div class="stylefiv">
+				<div class="bsx">
+					<div class="thumb">
+						<a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-08/" title="Isekai Shoukan wa Nidome desu Odcinek 08">
+							<img src="https://i1.wp.com/animeni.pl/wp-content/uploads/2023/06/e71f5238218f0d75d11f96567001d482.jpg?resize=230,230" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" width="230" height="230"/>						</a>
+					</div>
+					<div class="inf">
+						<h2><a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-08/" title="Isekai Shoukan wa Nidome desu Odcinek 08">Isekai Shoukan wa Nidome desu Odcinek 08</a></h2>
+						<span><i class="far fa-user"></i> Dodał: moszter</span>
+						<span><i class="far fa-calendar-alt"></i> Dodano: 2 tygodnie temu</span>
+					</div>
+				</div>
+			</div>
+					<div class="stylefiv">
+				<div class="bsx">
+					<div class="thumb">
+						<a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-10/" title="Isekai Shoukan wa Nidome desu Odcinek 10">
+							<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/04ef60621c27adc9686b430cd40784ed.jpg?resize=230,230" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" width="230" height="230"/>						</a>
+					</div>
+					<div class="inf">
+						<h2><a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-10/" title="Isekai Shoukan wa Nidome desu Odcinek 10">Isekai Shoukan wa Nidome desu Odcinek 10</a></h2>
+						<span><i class="far fa-user"></i> Dodał: moszter</span>
+						<span><i class="far fa-calendar-alt"></i> Dodano: 2 tygodnie temu</span>
+					</div>
+				</div>
+			</div>
+		</div></div>			<div class="bixbox">
+				<div class="releases"><h3><span>Polecane Serie</span></h3></div>
+				<div class="listupd">
+				<article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://animeni.pl/anime/kuma-kuma-kuma-bear/" itemprop="url" title="Kuma Kuma Kuma Bear" class="tip" rel="1304">
+		<div class="limit">
+									<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Zakończony</span>
+							</div>
+			<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/gPyVJKeL7ewZwcc2Wbj4wCIFSbJ-1-scaled.jpg?resize=247,350" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Kuma Kuma Kuma Bear" width="247" height="350"/>		</div>
+			<div class="tt">
+				Kuma Kuma Kuma Bear				<h2 itemprop="headline">Kuma Kuma Kuma Bear</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://animeni.pl/anime/kuma-kuma-kuma-bear-punch/" itemprop="url" title="Kuma Kuma Kuma Bear Punch!" class="tip" rel="1343">
+		<div class="limit">
+									<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Emitowany</span>
+							</div>
+			<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/q59uhTbC02vA12MjIbWgvYPC9cf-scaled.jpg?resize=247,350" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Kuma Kuma Kuma Bear Punch!" width="247" height="350"/>		</div>
+			<div class="tt">
+				Kuma Kuma Kuma Bear Punch!				<h2 itemprop="headline">Kuma Kuma Kuma Bear Punch!</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://animeni.pl/anime/tensei-kizoku-no-isekai-boukenroku-jichou-wo-shiranai-kamigami-no-shito/" itemprop="url" title="Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito" class="tip" rel="2654">
+		<div class="limit">
+									<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Emitowany</span>
+							</div>
+			<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/qZdMgazTarR30GJ7piPzCGAKlxz.jpg?resize=247,350" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito" width="247" height="350"/>		</div>
+			<div class="tt">
+				Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito				<h2 itemprop="headline">Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://animeni.pl/anime/love-hina-haru-special-kimi-sakura-chiru-nakare/" itemprop="url" title="Love Hina Haru Special: Kimi Sakura Chiru Nakare!!" class="tip" rel="2397">
+		<div class="limit">
+									<div class="typez Special">Specjalny</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Zakończony</span>
+							</div>
+			<img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/82632l.jpg?resize=247,350" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Love Hina Haru Special: Kimi Sakura Chiru Nakare!!" width="247" height="350"/>		</div>
+			<div class="tt">
+				Love Hina Haru Special: Kimi Sakura Chiru Nakare!!				<h2 itemprop="headline">Love Hina Haru Special: Kimi Sakura Chiru Nakare!!</h2>
+			</div>
+		</a>
+	</div>
+</article><article class="bs" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+	<div class="bsx">
+		<a href="https://animeni.pl/anime/dr-stone-new-world/" itemprop="url" title="Dr. Stone: New World" class="tip" rel="306">
+		<div class="limit">
+						<div class="hotbadge"><i class="fas fa-fire-alt"></i></div>			<div class="typez TV">TV</div>
+			<div class="ply"><i class="far fa-play-circle"></i></div>
+			<div class="bt">
+				<span class="epx">Emitowany</span>
+							</div>
+			<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/1686488592-1941-136268.jpg?resize=247,350" class="ts-post-image wp-post-image attachment-medium_large size-medium_large" loading="lazy" itemprop="image" title="Dr. Stone: New World" width="247" height="350"/>		</div>
+			<div class="tt">
+				Dr. Stone: New World				<h2 itemprop="headline">Dr. Stone: New World</h2>
+			</div>
+		</a>
+	</div>
+</article>				</div>
+		</div>
+			<div class="bixbox">
+		<div class="releases"><h3><span>Komentarze</span></h3></div>
+		<div class="cmt commentx">
+									
+     
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Dodaj komentarz <small><a rel="nofollow" id="cancel-comment-reply-link" href="/isekai-shoukan-wa-nidome-desu-odcinek-09/#respond" style="display:none;">Anuluj pisanie odpowiedzi</a></small></h3><form action="https://animeni.pl/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Twój adres e-mail nie zostanie opublikowany.</span> <span class="required-field-message">Wymagane pola są oznaczone <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Komentarz <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Nazwa <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required" /></p>
+<p class="comment-form-email"><label for="email">E-mail <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required" /></p>
+<p class="comment-form-url"><label for="url">Witryna internetowa</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Zapisz moje dane, adres e-mail i witrynę w przeglądarce aby wypełnić dane podczas pisania kolejnych komentarzy.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Opublikuj komentarz" /> <input type='hidden' name='comment_post_ID' value='1198' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+						 </div>
+	</div>
+	
+	<meta itemprop="author" content="StarDust">
+	<meta itemprop="datePublished" content="2023-06-17T16:43:38+02:00">
+	<meta itemprop="dateModified" content="2023-06-17T16:43:38+02:00">
+	<span style="display: none;" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+		<span style="display: none;" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+			<meta itemprop="url" content="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png">
+		</span>
+		<meta itemprop="name" content="AnimeNi.pl">
+	</span>
+	</article>
+</div>
+<script>tsUpdateView(1198);</script>
+<div id="sidebar">
+	        <div id="mainepisode">
+        <!--themesia cache start-->
+<div id="singlepisode">
+    <div class="headlist">
+        <div class="thumb">
+            <a href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/"><img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg?resize=60,70" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="60" height="70"/></a>
+        </div>
+        <div class="det">
+            <h3><a href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/">Isekai Shoukan wa Nidome desu</a></h3>
+            <span><i>Emitowany</i> - <em class="epnow">?</em> / 12</span>
+        </div>
+    </div>
+    <div class="episodelist">
+        <ul>
+
+                            <li data-id="2250">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-11/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i1.wp.com/animeni.pl/wp-content/uploads/2023/06/e020a0c8a84faf45a4f8a8a75d01672f.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 11" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 11</h4>
+                            <span>Odc 11 - 24 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1200">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-10/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/04ef60621c27adc9686b430cd40784ed.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 10" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 10</h4>
+                            <span>Odc 10 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1198">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/1f88f5458ebb918fe1d66534e366c532.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 09" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 09</h4>
+                            <span>Odc 9 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1196">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-08/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i1.wp.com/animeni.pl/wp-content/uploads/2023/06/e71f5238218f0d75d11f96567001d482.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 08" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 08</h4>
+                            <span>Odc 8 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1194">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-07/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/f6cd5d0e2a0c0b6dafe7ffe6a03cb110.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 07" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 07</h4>
+                            <span>Odc 7 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1192">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-06/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/feb69b7ee643a375b1da7cb54bc61f44.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 06" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 06</h4>
+                            <span>Odc 6 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1190">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-05/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/6bba0bb6d6120e6174a87354bdba6212.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 05" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 05</h4>
+                            <span>Odc 5 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1188">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-04/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i1.wp.com/animeni.pl/wp-content/uploads/2023/06/732aa6105df5443bea71f746ecf7fdc3.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 04" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 04</h4>
+                            <span>Odc 4 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1185">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-03/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i1.wp.com/animeni.pl/wp-content/uploads/2023/06/392a388c97e2bdf39dd18766f5d32ec4.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 03" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 03</h4>
+                            <span>Odc 3 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1183">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-02/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i1.wp.com/animeni.pl/wp-content/uploads/2023/06/8fd34a7c98ad0de75754d01985ad65db.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 02" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 02</h4>
+                            <span>Odc 2 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                            <li data-id="1181">
+                    <a href="https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-01/" itemprop="url" title="">
+                        <div class="thumbnel">
+                            <img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/15f1ec372a013efc511143e10df7ed3b.jpg?resize=130,130" class="ts-post-image wp-post-image attachment-thumbnail size-thumbnail" loading="lazy" itemprop="image" title="Isekai Shoukan wa Nidome desu Odcinek 01" width="130" height="130"/>                        </div>
+                        <div class="playinfo">
+                            <h4>Isekai Shoukan wa Nidome desu Odcinek 01</h4>
+                            <span>Odc 1 - 17 czerwca, 2023</span>
+                        </div>
+                    </a>
+                </li>
+                        
+        </ul>
+    </div>
+</div>            
+            <!--themesia cache end 2023-07-01 18:01:58 0.01544-->            <script>
+                var tsMediaSelectedId = 1198;
+                var tsMediaEpNow = "9";
+                tsMedia(tsmmedia);
+                tsMediaPickList();
+            </script>
+        </div>
+        	<!--themesia cache start--><div class="section"><div class="releases"><h3>Najpopularniejsze na AnimeNi</h3></div>
+<div class="ts-wpop-series-gen">
+	<ul class="ts-wpop-nav-tabs">
+		<li class="active"><a class="ts-wpop-tab" data-range="weekly">Tydzień</a></li>
+		<li><a  class="ts-wpop-tab" data-range="monthly">Miesiąc</a></li>
+		<li><a  class="ts-wpop-tab" data-range="alltime">Od początku</a></li>
+	</ul>
+</div>
+
+	<div id="wpop-items">
+	<div class='serieslist pop wpop wpop-weekly'>
+		<ul>
+							<li>
+					<div class="ctr">1</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta/" rel="13">
+							<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/1686080436-9645-134327.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta/" rel="13">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:67%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.70</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">2</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/dead-mount-death-play/" rel="1738">
+							<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/oOlg3bPWOKBgy5kgOTVe8pJz4HI-scaled.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/dead-mount-death-play/" rel="1738">Dead Mount Death Play</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/reincarnation/" rel="tag">Reincarnation</a>, <a href="https://animeni.pl/genres/seinen/" rel="tag">Seinen</a>, <a href="https://animeni.pl/genres/supernatural/" rel="tag">Supernatural</a>, <a href="https://animeni.pl/genres/thriller/" rel="tag">Thriller</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:73.1%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.31</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">3</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/" rel="1168">
+							<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/" rel="1168">Isekai Shoukan wa Nidome desu</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a>, <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/harem/" rel="tag">Harem</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:60.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.07</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">4</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/mashle/" rel="876">
+							<img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/9rvbqwoEis7SZjbfiIYjzE2uWz3-scaled.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/mashle/" rel="876">Mashle</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/gag-humor/" rel="tag">Gag Humor</a>, <a href="https://animeni.pl/genres/parody/" rel="tag">Parody</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">5</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen/" rel="1083">
+							<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/n82HJl8UxQdN0Y6bS1FOoJrZy3k.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen/" rel="1083">Kimetsu no Yaiba: Katanakaji no Sato-hen</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/historical/" rel="tag">Historical</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:85.5%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.55</div>
+							</div>
+						</div>
+											</div>
+				</li>
+					</ul>
+	</div>
+
+
+	<div class='serieslist pop wpop wpop-monthly'>
+		<ul>
+							<li>
+					<div class="ctr">1</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta/" rel="13">
+							<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/1686080436-9645-134327.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta/" rel="13">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:67%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.70</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">2</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/" rel="1168">
+							<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/" rel="1168">Isekai Shoukan wa Nidome desu</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a>, <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/harem/" rel="tag">Harem</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:60.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.07</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">3</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/mashle/" rel="876">
+							<img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/9rvbqwoEis7SZjbfiIYjzE2uWz3-scaled.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/mashle/" rel="876">Mashle</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/gag-humor/" rel="tag">Gag Humor</a>, <a href="https://animeni.pl/genres/parody/" rel="tag">Parody</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">4</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen/" rel="1083">
+							<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/n82HJl8UxQdN0Y6bS1FOoJrZy3k.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen/" rel="1083">Kimetsu no Yaiba: Katanakaji no Sato-hen</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/historical/" rel="tag">Historical</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:85.5%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.55</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">5</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/yamada-kun-to-lv999-no-koi-wo-suru/" rel="587">
+							<img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/1686497925-6513-134178.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/yamada-kun-to-lv999-no-koi-wo-suru/" rel="587">Yamada-kun to Lv999 no Koi wo Suru</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a>, <a href="https://animeni.pl/genres/video-game/" rel="tag">Video Game</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.6%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.66</div>
+							</div>
+						</div>
+											</div>
+				</li>
+					</ul>
+	</div>
+
+
+	<div class='serieslist pop wpop wpop-alltime'>
+		<ul>
+							<li>
+					<div class="ctr">1</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta/" rel="13">
+							<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/1686080436-9645-134327.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/isekai-de-cheat-skill-wo-te-ni-shita-ore-wa-genjitsu-sekai-wo-mo-musou-suru-level-up-wa-jinsei-wo-kaeta/" rel="13">Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:67%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.70</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">2</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/" rel="1168">
+							<img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/hhkFa4zlKcGne2zeLE8bJSuPpfA.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/isekai-shoukan-wa-nidome-desu/" rel="1168">Isekai Shoukan wa Nidome desu</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/adventure/" rel="tag">Adventure</a>, <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/harem/" rel="tag">Harem</a>, <a href="https://animeni.pl/genres/isekai/" rel="tag">Isekai</a>, <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:60.7%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">6.07</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">3</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/mashle/" rel="876">
+							<img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/9rvbqwoEis7SZjbfiIYjzE2uWz3-scaled.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/mashle/" rel="876">Mashle</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/comedy/" rel="tag">Comedy</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/gag-humor/" rel="tag">Gag Humor</a>, <a href="https://animeni.pl/genres/parody/" rel="tag">Parody</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:75.9%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.59</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">4</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen/" rel="1083">
+							<img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/n82HJl8UxQdN0Y6bS1FOoJrZy3k.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-katanakaji-no-sato-hen/" rel="1083">Kimetsu no Yaiba: Katanakaji no Sato-hen</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/historical/" rel="tag">Historical</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:85.5%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">8.55</div>
+							</div>
+						</div>
+											</div>
+				</li>
+							<li>
+					<div class="ctr">5</div>
+					<div class="imgseries">
+						<a class="series" href="https://animeni.pl/anime/yamada-kun-to-lv999-no-koi-wo-suru/" rel="587">
+							<img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/1686497925-6513-134178.jpg?resize=65,85" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="65" height="85"/>						</a>
+					</div>
+					<div class="leftseries">
+						<h4>
+							<a class="series" href="https://animeni.pl/anime/yamada-kun-to-lv999-no-koi-wo-suru/" rel="587">Yamada-kun to Lv999 no Koi wo Suru</a>
+						</h4>
+						<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a>, <a href="https://animeni.pl/genres/video-game/" rel="tag">Video Game</a></span>												<div class="rt">
+							<div class="rating">
+								<div class="rating-prc">
+									<div class="rtp">
+										<div class="rtb"><span style="width:76.6%"></span></div>
+									</div>
+								</div>
+								<div class="numscore">7.66</div>
+							</div>
+						</div>
+											</div>
+				</li>
+					</ul>
+	</div>
+</div>
+</div><script>ts_popular_widget.run(1688148090);</script>
+<!--themesia cache end 2023-07-01 18:01:30 0.01731--><div class="section"><iframe loading="lazy" src="https://discord.com/widget?id=876465392862756914&theme=dark" width="340" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div><div class="section"><div class="releases"><h3><span>Najnowszee filmy</span></h3><a class="vl" href="https://animeni.pl/anime/?status=&type=Movie&order=update">Pokaż więcej</a></div><div class='serieslist'><ul>			<li>
+				<div class="imgseries">
+					<a class="series" href="https://animeni.pl/anime/clannad-movie/" rel="3055"><img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/75650.jpg?resize=56,80" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="56" height="80"/></a>
+				</div>
+				<div class="leftseries">
+					<h4><a class="series" href="https://animeni.pl/anime/clannad-movie/" rel="3055">Clannad Movie</a></h4>
+					<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/drama/" rel="tag">Drama</a>, <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a>, <a href="https://animeni.pl/genres/school/" rel="tag">School</a>, <a href="https://animeni.pl/genres/supernatural/" rel="tag">Supernatural</a></span>					<span>2007</span>				</div>
+			</li>
+						<li>
+				<div class="imgseries">
+					<a class="series" href="https://animeni.pl/anime/kagami-no-kojou/" rel="2620"><img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/brQyFV1QdpCzn1Kbhl00Fa5Qukv-scaled.jpg?resize=56,80" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="56" height="80"/></a>
+				</div>
+				<div class="leftseries">
+					<h4><a class="series" href="https://animeni.pl/anime/kagami-no-kojou/" rel="2620">Kagami no Kojou</a></h4>
+					<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/drama/" rel="tag">Drama</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/mystery/" rel="tag">Mystery</a></span>					<span>2022</span>				</div>
+			</li>
+						<li>
+				<div class="imgseries">
+					<a class="series" href="https://animeni.pl/anime/air-movie/" rel="2267"><img src="https://i0.wp.com/animeni.pl/wp-content/uploads/2023/06/26507.jpg?resize=56,80" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="56" height="80"/></a>
+				</div>
+				<div class="leftseries">
+					<h4><a class="series" href="https://animeni.pl/anime/air-movie/" rel="2267">Air Movie</a></h4>
+					<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/drama/" rel="tag">Drama</a>, <a href="https://animeni.pl/genres/romance/" rel="tag">Romance</a>, <a href="https://animeni.pl/genres/supernatural/" rel="tag">Supernatural</a></span>					<span>2005</span>				</div>
+			</li>
+						<li>
+				<div class="imgseries">
+					<a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-movie-mugen-ressha-hen/" rel="1032"><img src="https://i3.wp.com/animeni.pl/wp-content/uploads/2023/06/5nWvH7AOFYzLxWXjixonRt2blXt-scaled.jpg?resize=56,80" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="56" height="80"/></a>
+				</div>
+				<div class="leftseries">
+					<h4><a class="series" href="https://animeni.pl/anime/kimetsu-no-yaiba-movie-mugen-ressha-hen/" rel="1032">Kimetsu no Yaiba Movie: Mugen Ressha-hen</a></h4>
+					<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/historical/" rel="tag">Historical</a>, <a href="https://animeni.pl/genres/shounen/" rel="tag">Shounen</a></span>					<span>2020</span>				</div>
+			</li>
+						<li>
+				<div class="imgseries">
+					<a class="series" href="https://animeni.pl/anime/fate-stay-night-movie-heavens-feel-iii-spring-song/" rel="404"><img src="https://i2.wp.com/animeni.pl/wp-content/uploads/2023/06/112957.jpg?resize=56,80" class="ts-post-image wp-post-image attachment-medium size-medium" loading="lazy" width="56" height="80"/></a>
+				</div>
+				<div class="leftseries">
+					<h4><a class="series" href="https://animeni.pl/anime/fate-stay-night-movie-heavens-feel-iii-spring-song/" rel="404">Fate/stay night Movie: Heaven&#8217;s Feel &#8211; III. Spring Song</a></h4>
+					<span><b>Gatunki</b>: <a href="https://animeni.pl/genres/action/" rel="tag">Action</a>, <a href="https://animeni.pl/genres/fantasy/" rel="tag">Fantasy</a>, <a href="https://animeni.pl/genres/supernatural/" rel="tag">Supernatural</a></span>					<span>2020</span>				</div>
+			</li>
+			</ul></div></div>			
+</div><div class="clear"></div>
+</div>
+</div>
+
+<div id="footer">
+	<footer id="colophon" class="site-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter" role="contentinfo">
+	<div class="footermenu"><div class="menu-stopka-container"><ul id="menu-stopka" class="menu"><li id="menu-item-43" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43"><a href="https://animeni.pl/regulamin/" itemprop="url">Regulamin</a></li>
+<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-24"><a rel="privacy-policy" href="https://animeni.pl/polityka-prywatnosci/" itemprop="url">Polityka prywatności</a></li>
+</ul></div></div>	<div class="footercopyright">
+		 
+<div class="footer-az">
+                  <span class="ftaz">A-Z LIST</span><span class="size-s">Szukaj anime po pierwszej literze od A do Z.</span>
+                  <ul class="ulclear az-list">
+					  <li><a href="https://animeni.pl/a-z-list/?show=.">#</a></li>
+					  <li><a href="https://animeni.pl/a-z-list/?show=0-9">0-9</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=A">A</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=B">B</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=C">C</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=D">D</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=E">E</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=F">F</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=G">G</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=H">H</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=I">I</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=J">J</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=K">K</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=L">L</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=M">M</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=N">N</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=O">O</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=P">P</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=Q">Q</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=R">R</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=S">S</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=T">T</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=U">U</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=V">V</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=W">W</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=X">X</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=Y">Y</a></li>
+					  					  <li><a href="https://animeni.pl/a-z-list/?show=Z">Z</a></li>
+					                    </ul>
+                  <div class="clear"></div>
+               </div>
+		<div class="copyright">
+			<div class="footer-logo"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" alt="" data-src-img="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png" data-src-webp="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png.webp" data-eio="j" class="ewww_webp"><noscript><img src="https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png" title="" alt=""></noscript></div>
+			<div class="txt">
+				<span>Copyright © 2023 AnimeNi.pl. All Rights Reserved</span>
+				<p>Twój ulubiony Portal na którym znajdziesz seriale anime po polsku! Oglądaj do woli, za darmo i bez ograniczeń. Największa aktualna baza anime po polsku, aktualizacje codziennie. Sprawdź już teraz i ciesz się nieograniczoną rozrywką na dowolnym ekranie. Strona <b>AnimeNi.pl</b> nie przechowuje żadnych plików na swoim serwerze. </p>
+			</div>
+		</div>
+	</div>
+	</footer>
+</div>
+<template id="tmpl-age-gate">
+        
+<div class="age-gate-wrapper">
+            <div class="age-gate-loader">
+    
+        <svg version="1.1" id="L5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+            <circle fill="currentColor" stroke="none" cx="6" cy="50" r="6">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 15 ; 0 -15; 0 15" repeatCount="indefinite" begin="0.1"/>
+            </circle>
+            <circle fill="currentColor" stroke="none" cx="30" cy="50" r="6">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 10 ; 0 -10; 0 10" repeatCount="indefinite" begin="0.2"/>
+            </circle>
+            <circle fill="currentColor" stroke="none" cx="54" cy="50" r="6">
+                <animateTransform attributeName="transform" dur="1s" type="translate" values="0 5 ; 0 -5; 0 5" repeatCount="indefinite" begin="0.3"/>
+            </circle>
+        </svg>
+    </div>
+        <div class="age-gate-background-color"></div>
+    <div class="age-gate-background">
+            </div>
+    
+    <div class="age-gate" role="dialog" aria-modal="true" aria-label="">
+    <form method="post" class="age-gate-form">
+<div class="age-gate-heading">
+            <h1 class="age-gate-heading-title">AnimeNi.pl</h1>
+    </div>
+<p class="age-gate-subheadline">
+    </p>
+<div class="age-gate-fields">
+        
+<p class="age-gate-challenge">
+    Czy masz ukończone 18 lat?</p>
+<div class="age-gate-buttons">
+            <button class="age-gate-submit age-gate-submit-no" data-submit="no" value="0" name="age_gate[confirm]" type="submit">Nie</button>
+        <button type="submit" class="age-gate-submit age-gate-submit-yes" data-submit="yes" value="1" name="age_gate[confirm]">Tak</button>
+    </div>
+    </div>
+
+<input type="hidden" name="age_gate[age]" value="9MRd26N84fSy3NwprhoXtg==" />
+<input type="hidden"  name="age_gate[nonce]" value="2a141977d4" /><input type="hidden" name="_wp_http_referer" value="/isekai-shoukan-wa-nidome-desu-odcinek-09/" /><input type="hidden" name="age_gate[lang]" value="pl" />
+    <input type="hidden" name="age_gate[confirm]" />
+    <div class="age-gate-remember-wrapper">
+        <label class="age-gate-remember">
+            <input type="checkbox" class="age-gate-remember-field" name="age_gate[remember]" value="1" checked /> <span type="checkbox" class="age-gate-remember-text">Remember me</span>
+        </label>
+    </div>
+    <div class="age-gate-errors"></div>
+</form>
+    </div>
+    </div>
+    </template>
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="fsb_image" alt="" data-src-img="https://animeni.pl/wp-content/uploads/2023/06/tlo-strona-2.png" data-src-webp="https://animeni.pl/wp-content/uploads/2023/06/tlo-strona-2.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://animeni.pl/wp-content/uploads/2023/06/tlo-strona-2.png" id="fsb_image" alt=""/></noscript><script>
+var dmlogo1 = 'https://animeni.pl/wp-content/uploads/2023/06/logo-strona-dark-lato-1.png';
+var dmlogo2 = 'https://animeni.pl/wp-content/uploads/2023/06/logo-strona-light-lato.png';
+jQuery("#thememode input[type='checkbox']").on('change', function(){
+	var is_on = jQuery("#thememode input[type='checkbox']").prop("checked");
+	if (is_on == false){
+		if (dmlogo2) jQuery(".logos img").attr('src', dmlogo2);
+		localStorage.setItem("thememode", "lightmode");
+		jQuery("body").addClass("lightmode");
+		jQuery("body").removeClass("darkmode");
+	}else{
+		if (dmlogo1) jQuery(".logos img").attr('src', dmlogo1);
+		localStorage.setItem("thememode", "darkmode");
+		jQuery("body").removeClass("lightmode");
+		jQuery("body").addClass("darkmode");
+	}
+});
+</script>
+<script type='text/javascript' id='age-gate-all-js-extra'>
+/* <![CDATA[ */
+var age_gate_common = {"cookies":"Twoja przegl\u0105darka nie zapisuje plik\u00f3w cookies, mo\u017cesz mie\u0107 problemy przegl\u0105daj\u0105c t\u0119 zawarto\u015b\u0107.","simple":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/plugins/age-gate/dist/all.js?ver=3.2.0' id='age-gate-all-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/plugins/age-gate/dist/autotab.js?ver=3.2.0' id='age-gate-autotab-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/animeni.pl\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/jquery.qtip.min.js?ver=2.2.1' id='qtip-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/filter.js?ver=2.2.6' id='filter-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/tsevents.js?ver=2.2.6' id='ts-events-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?render=6LePjJ0jAAAAABA7b51MMyfnVnf9IIXOcetjoT3-&#038;ver=3.0' id='google-recaptcha-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2' id='wp-polyfill-inert-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LePjJ0jAAAAABA7b51MMyfnVnf9IIXOcetjoT3-","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7.7' id='wpcf7-recaptcha-js'></script>
+<script type='text/javascript' src='https://animeni.pl/wp-content/themes/animestream/assets/js/search.js?ver=6.2.2' id='ts-search-js'></script>
+</body>
+</html>

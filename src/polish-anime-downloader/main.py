@@ -1,5 +1,4 @@
-import requests
-import re
+import requests, re, signal, sys
 from urllib.parse import urlsplit, urlunsplit
 from bs4 import BeautifulSoup
 
@@ -13,6 +12,11 @@ prev_links = ""
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
 }
+
+
+def handle_interrupt(signum, frame):  # MIGHTDO Maybe wrapping the code inside try: except block would be better since rn I'm importing two modules just to exit gracefully
+    print("\nSprzątam...")
+    sys.exit(0)
 
 
 def got_links():
@@ -29,6 +33,7 @@ def get_page_title(html):
     return title
 
 
+signal.signal(signal.SIGINT, handle_interrupt)  # Register the signal handler for SIGINT (Ctrl+C)
 if "desu-online" in url:
     domain = "desu-online"
 elif "animeni" in url:
