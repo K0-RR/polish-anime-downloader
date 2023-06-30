@@ -31,9 +31,6 @@ default_target: all
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -63,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C
+CMAKE_BINARY_DIR = /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -90,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/CMakeFiles /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/build/CMakeFiles /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

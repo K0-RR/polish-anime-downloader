@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/polish_anime_downloader.dir/polish_anime_downloader.c.o -o polish_anime_downloader 

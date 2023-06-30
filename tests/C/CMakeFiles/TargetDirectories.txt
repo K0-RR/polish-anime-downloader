@@ -1,0 +1,3 @@
+/home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/CMakeFiles/polish_anime_downloader.dir
+/home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/CMakeFiles/edit_cache.dir
+/home/lenovo/Dokumenty/GitHub/polish-anime-downloader/tests/C/CMakeFiles/rebuild_cache.dir
