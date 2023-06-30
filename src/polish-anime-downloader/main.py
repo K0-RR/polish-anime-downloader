@@ -1,4 +1,4 @@
-import requests, re, signal, sys, time, timeit, logging
+import requests, re, signal, time, timeit, logging
 from urllib.parse import urlsplit, urlunsplit
 from bs4 import BeautifulSoup
 # TODO użyj time timeit logging
@@ -7,7 +7,7 @@ url = "https://docchi.pl/series/oshi-no-ko/8"
 url = "https://docchi.pl/series/11eyes/9"
 url = "https://animeni.pl/isekai-shoukan-wa-nidome-desu-odcinek-09/"
 # url = "https://anime-odcinki.pl/anime/s2-opm/15/"
-episode_1_links = None  # wcześniej było []
+episode_1_links = None  # previously was "[]"
 prev_links = ""
 headers = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
@@ -16,8 +16,8 @@ headers = {
 
 def handle_interrupt(
     signum, frame
-):  # MIGHTDO Maybe wrapping the code inside try: except block would be better since rn I'm importing two modules just to exit gracefully
-    exit("\r  Sprzątam...")
+):  # MIGHTDO Maybe try wrapping the code inside try: except block would be better since rn I'm importing a "signal" module just to exit gracefully
+    raise SystemExit("\r  Sprzątam...")
 
 
 def got_links():
@@ -56,15 +56,15 @@ else:
     )
     exit()
 
-if url.endswith("/"):  # Usuń "/" na końcu URL, jeśli istnieje
+if url.endswith("/"):  # Remove "/" at the end of the URL
     url = url[:-1]
 
 if domain == "desu-online" or "animeni":
     base_url = url.rsplit("-", 1)[0] + "-"
 
     if url[-2] == "/" or url[-2] == "-":
-        episode_number = int(url[-1])  # Sprawdź, czy przedostatni znak to "/", "-",
-    elif url[-2].isdigit():  # lub cyfra
+        episode_number = int(url[-1])  # Check if the last char is "/", "-",
+    elif url[-2].isdigit():  # or a digit
         episode_number = url[
             -2:
         ]  # musi być str, bo "leading zeros in decimal integer literals are not permitted" - na wypadek jakby nr odcinka był "01", a nie "1" itd...
