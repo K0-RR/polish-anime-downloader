@@ -1,0 +1,7 @@
+{
+  "site_package_search_strategy": "pep561",
+  "source_directories": [
+    "."
+  ],
+  "typeshed": "/home/lenovo/Dokumenty/GitHub/polish-anime-downloader/src/polish_anime_downloader"
+}

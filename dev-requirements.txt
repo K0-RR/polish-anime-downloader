@@ -1,0 +1,7 @@
+pylint
+flake8
+mypy
+pytype
+pyre-check
+
+?pyright
